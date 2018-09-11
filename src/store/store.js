@@ -50,27 +50,22 @@ export const store = new Vuex.Store({
   
   actions: {
     getAllBook: (context, payload) => {
-      setTimeout(() => {
-        if (payload.query) {
-          // this state only use, not mutate.
-          context.state.configs.bookService.all('/search/', payload.query)
-          .then(resp => {
-            console.log(resp)
-            context.commit('getAllBook', resp)
-          })
-          .catch(err => console.log(err))
-        }
-        
-      }, 100)
+      if (payload.query) {
+        // this state only use, not mutate.
+        context.state.configs.bookService.all('/search/', payload.query)
+        .then(resp => {
+          console.log(resp)
+          context.commit('getAllBook', resp)
+        })
+        .catch(err => console.log(err))
+      }
     },
     getBook: (context, payload) => {
-      setTimeout(() => {
-        if (payload.id) {
-          // this state only use, not mutate.
-          // service api endpoint not work for get detail ebook. Fuck !
-          context.commit('getBook', payload)
-        }
-      }, 100)
+      if (payload.id) {
+        // this state only use, not mutate.
+        // service api endpoint not work for get detail ebook. Fuck !
+        context.commit('getBook', payload)
+      }
     }
   }
 })
