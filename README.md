@@ -2,21 +2,37 @@
 
 > Learn to make web applications based on "PWA" with Vue 2.
 
+## Quick Preview
+
+![](https://github.com/yanwarsolah/checkbook-pwa-vue2/blob/master/quickpreview.gif)
+
 You can serve using `ngrok` tools via command line.
 
 ```
 $ ngrok http 8080
 
-Session Status                online                                                                        
-Version                       2.1.18                                                                        
-Region                        United States (us)                                                            
-Web Interface                 http://127.0.0.1:4040                                                         
-Forwarding                    http://,,,.ngrok.io  -> localhost:8080                                    
-Forwarding                    https://,,,.ngrok.io -> localhost:8080                                   
+ngrok by @inconshreveable                                                                               (Ctrl+C to quit)
+
+Session Status                online
+Session Expires               7 hours, 55 minutes
+Version                       2.2.8
+Region                        United States (us)
+Web Interface                 http://127.0.0.1:4040
+Forwarding                    http://82021b23.ngrok.io -> localhost:8080
+Forwarding                    https://82021b23.ngrok.io -> localhost:8080
+
+Connections                   ttl     opn     rt1     rt5     p50     p90
+                              3       2       0.01    0.01    41.96   78.39                               
 ```
 
 ### Firebase Plan
-You can also save your site on firebase hosting. This is far more recommended. For this case you can access my firebase host on https://checkbook-1300k.firebaseapp.com/ with your smartphone via a web browser. And you can try the PWA feature by saving it as a shortcut on your smartphone desktop.
+You can also save your site on firebase hosting. This is far more recommended. But, this API not https and then you get error like this:
+
+```
+This request has been blocked; the content must be served over HTTPS.
+```
+
+You can change API under https to work in firebase.
 
 ## Build Setup
 
