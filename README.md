@@ -4,7 +4,7 @@
 
 ## Quick Preview
 
-![](https://github.com/yanwarsolah/checkbook-pwa-vue2/blob/master/quickpreview.gif)
+![](https://github.com/yanwarsolah/checkbook-pwa-vue2/blob/master/quickpreview.PNG)
 
 You can serve using `ngrok` tools via command line.
 
